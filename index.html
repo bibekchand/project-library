@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Project</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Itim&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+      body {
+        line-height: 1.5;
+        font-family: "Roboto Mono", serif;
+        overflow-wrap: break-word;
+        hyphens: auto;
+        background-color: #c5d3e8;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1>Library Project</h1>
+    </nav>
+    <dialog>
+      <form>
+        <legend>Add new book</legend>
+        <div>
+          <label for="title">Title*</label>
+          <input type="text" id="title" required />
+        </div>
+        <div>
+          <label for="author">Author*</label>
+          <input type="text" id="author" required />
+        </div>
+        <div>
+          <label for="pages">Pages Read*</label>
+          <input type="number" id="pages" required />
+        </div>
+        <div>
+          <label for="read">Have you read it?</label>
+          <input type="checkbox" id="read" />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </dialog>
+    <div class="content">
+      <button id="add-button">+ Add Books</button>
+      <div class="cards" id="cards"></div>
+    </div>
+  </body>
+</html>
